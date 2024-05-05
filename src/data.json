@@ -1,0 +1,36 @@
+{
+  "projects": [
+    { "name": "Mission", "href": "" },
+    {
+      "name": "Top Secret",
+      "href": ""
+    },
+    {
+      "name": "Targets",
+      "href": ""
+    },
+    {
+      "name": "Hacker",
+      "href": ""
+    }
+  ],
+  "cvs": [
+    {
+      "link": "https://docs.google.com/document/d/142OxFRdnhCFJyLc5UonQ1EemnXvyQ-486sjrHld0-pc/edit?usp=sharing",
+      "lang": "eng",
+      "doc": "cv"
+    },
+    {
+      "link": "https://docs.google.com/document/d/1rjhoSsVEhexMixKSrJGNN17Da65SiLpZj2k-iagryZs/edit#",
+      "lang": "ru",
+      "doc": "резюме"
+    }
+  ],
+  "contacts": [
+    {
+      "link": "mailto:cyberx-agent@gmail.com",
+      "name": "email",
+      "background": "#458666"
+    }
+  ]
+}
