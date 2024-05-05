@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensics with Effect</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: glow 2s linear infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        .image-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+        }
+
+        .image-box img {
+            width: 25%; /* 8 images, each taking 25% width */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .image-box img {
+                width: 50%; /* On smaller screens, each image takes 50% width */
+            }
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop>
+            <source src="a.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="title">Forensics</h1>
+        <div class="image-box">
+            <img src="e1.jpg" alt="Image 1">
+            <img src="e2.jpg" alt="Image 2">
+            <img src="e3.jpg" alt="Image 3">
+            <img src="e4.jpg" alt="Image 4">
+            <img src="e5.jpg" alt="Image 5">
+            <img src="e6.jpg" alt="Image 6">
+            <img src="e7.jpg" alt="Image 7">
+            <img src="e8.jpg" alt="Image 8">
+        </div>
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+    </div>
+</body>
+</html>
