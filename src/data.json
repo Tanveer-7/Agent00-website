@@ -1,8 +1,8 @@
 {
   "projects": [
-    { "name": "Mission", "href": "" },
+    { "name": "Mission", "href": "mission.html" },
     {
-      "name": "Top Secret",
+      "name": "Forensics",
       "href": ""
     },
     {
@@ -10,7 +10,7 @@
       "href": ""
     },
     {
-      "name": "Hacker",
+      "name": "Agents",
       "href": ""
     }
   ],
